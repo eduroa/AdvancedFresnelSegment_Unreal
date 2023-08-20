@@ -11,6 +11,8 @@ With the new update you can use 3 Fresnel Functions:
 - Standard Fresnel Func (Unreal Function)
 
 - A ramp function that worked with 3 colors, great to create more amazing visuals.
+  
+- Project in Unreal 4.15, works in a further version.
 
 Video Youtube:
 
