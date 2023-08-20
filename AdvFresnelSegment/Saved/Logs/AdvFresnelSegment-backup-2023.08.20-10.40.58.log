@@ -1,0 +1,926 @@
+﻿Log file open, 08/20/23 10:35:10
+LogInit:Display: Running engine for game: AdvFresnelSegment
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1939181388) SRandInit(-1939181388).
+LogTaskGraph: Started task graph with 5 named threads and 16 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.210684
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3450819
+LogInit: Engine Version: 4.15.3-3450819+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): May 21 2017 11:02:34
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: -EpicPortal  -epicusername="eduroam" -epicuserid=7fff7a6d1aea425e8b8762a5aa1891f9 -epiclocale=en -epicsandboxid=ue
+LogInit: Base directory: E:/UE4/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2023.08.20-14.35.10:934][  0]LogInit: Selected Device Profile: [Windows]
+[2023.08.20-14.35.10:934][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2023.08.20-14.35.10:937][  0]LogInit: Computer: PCHOME
+[2023.08.20-14.35.10:937][  0]LogInit: User: PCHOME
+[2023.08.20-14.35.10:937][  0]LogInit: CPU Page size=65536, Cores=12
+[2023.08.20-14.35.10:937][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2023.08.20-14.35.10:937][  0]LogMemory: Memory total: Physical=127.9GB (128GB approx)
+[2023.08.20-14.35.10:937][  0]LogMemory: Platform Memory Stats for Windows
+[2023.08.20-14.35.10:937][  0]LogMemory: Process Physical Memory: 268.52 MB used, 268.52 MB peak
+[2023.08.20-14.35.10:937][  0]LogMemory: Process Virtual Memory: 265.95 MB used, 265.95 MB peak
+[2023.08.20-14.35.10:937][  0]LogMemory: Physical Memory: 19772.57 MB used,  111184.97 MB free, 130957.54 MB total
+[2023.08.20-14.35.10:937][  0]LogMemory: Virtual Memory: 4783.80 MB used,  111184.97 MB free, 134217728.00 MB total
+[2023.08.20-14.35.10:985][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2023.08.20-14.35.11:276][  0]LogD3D11RHI: D3D11 adapters:
+[2023.08.20-14.35.11:352][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 3060' (Feature Level 11_0)
+[2023.08.20-14.35.11:352][  0]LogD3D11RHI:       12129/0/65478 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2023.08.20-14.35.11:353][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2023.08.20-14.35.11:353][  0]LogD3D11RHI:       0/0/65478 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2023.08.20-14.35.11:353][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2023.08.20-14.35.11:359][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2023.08.20-14.35.11:359][  0]LogD3D11RHI:     GPU DeviceId: 0x2504 (for the marketing name, search the web for "GPU Device Id")
+[2023.08.20-14.35.11:359][  0]LogWindows: EnumDisplayDevices:
+[2023.08.20-14.35.11:359][  0]LogWindows:    0. 'NVIDIA GeForce RTX 3060' (P:1 D:1)
+[2023.08.20-14.35.11:359][  0]LogWindows:    1. 'NVIDIA GeForce RTX 3060' (P:0 D:1)
+[2023.08.20-14.35.11:359][  0]LogWindows:    2. 'NVIDIA GeForce RTX 3060' (P:0 D:1)
+[2023.08.20-14.35.11:359][  0]LogWindows:    3. 'NVIDIA GeForce RTX 3060' (P:0 D:0)
+[2023.08.20-14.35.11:359][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2023.08.20-14.35.11:359][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 3060
+[2023.08.20-14.35.11:359][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2023.08.20-14.35.11:359][  0]LogD3D11RHI:      Driver Date: Unknown
+[2023.08.20-14.35.11:359][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2023.08.20-14.35.11:406][  0]LogD3D11RHI: Async texture creation enabled
+[2023.08.20-14.35.11:422][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2023.08.20-14.35.11:423][  0]LogD3D11RHI: HDR output is supported on display 2 (NvId: 0x80061081).
+[2023.08.20-14.35.11:423][  0]LogShaderCompilers: Guid format shader working directory is -44 characters bigger than the processId version (../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Intermediate/Shaders/WorkingDirectory/16028/).
+[2023.08.20-14.35.11:423][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/PCHOME/AppData/Local/Temp/UnrealShaderWorkingDir/DC87CD1340A4843A9958FDBF7FC12DE4/'.
+[2023.08.20-14.35.11:423][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2023.08.20-14.35.11:928][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2023.08.20-14.35.11:947][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2023.08.20-14.35.11:966][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2023.08.20-14.35.11:985][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2023.08.20-14.35.12:004][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2023.08.20-14.35.12:023][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2023.08.20-14.35.12:041][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2023.08.20-14.35.12:060][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2023.08.20-14.35.12:073][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2023.08.20-14.35.12:091][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2023.08.20-14.35.12:109][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2023.08.20-14.35.12:127][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2023.08.20-14.35.12:146][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2023.08.20-14.35.12:165][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2023.08.20-14.35.12:183][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2023.08.20-14.35.12:223][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2023.08.20-14.35.12:223][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2023.08.20-14.35.12:234][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2023.08.20-14.35.12:281][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2023.08.20-14.35.12:293][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2023.08.20-14.35.12:312][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2023.08.20-14.35.12:330][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2023.08.20-14.35.12:348][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2023.08.20-14.35.12:366][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2023.08.20-14.35.12:366][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2023.08.20-14.35.12:492][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2023.08.20-14.35.12:524][  0]LogDerivedDataCache: Loaded boot cache 0.03s 60MB C:/Users/PCHOME/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2023.08.20-14.35.12:525][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/PCHOME/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2023.08.20-14.35.12:525][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2023.08.20-14.35.12:525][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2023.08.20-14.35.12:525][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2023.08.20-14.35.12:525][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2023.08.20-14.35.12:534][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2023.08.20-14.35.12:545][  0]LogDerivedDataCache: Using Local data cache path C:/Users/PCHOME/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2023.08.20-14.35.12:550][  0]LogSlate: Using Freetype 2.6.0
+[2023.08.20-14.35.12:551][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2023.08.20-14.35.12:551][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2023.08.20-14.35.12:666][  0]LogInit: Selected Device Profile: [Windows]
+[2023.08.20-14.35.12:668][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2023.08.20-14.35.12:745][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2023.08.20-14.35.12:759][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2023.08.20-14.35.12:775][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2023.08.20-14.35.12:775][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2023.08.20-14.35.12:775][  0]LogMeshUtilities: No automatic mesh merging module available
+[2023.08.20-14.35.13:008][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: advfresnelsegment, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3349545568
+[2023.08.20-14.35.13:038][  0]LogAssetRegistry: FAssetRegistry took 0.0216 seconds to start up
+[2023.08.20-14.35.13:051][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.008176 seconds
+[2023.08.20-14.35.13:054][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2023.08.20-14.35.13:054][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
+[2023.08.20-14.35.13:054][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2023.08.20-14.35.13:072][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2023.08.20-14.35.13:663][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2023.08.20-14.35.13:693][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2023.08.20-14.35.13:867][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2023.08.20-14.35.13:985][  0]SourceControl: Info Source control is disabled
+[2023.08.20-14.35.14:050][  0]SourceControl: Info Source control is disabled
+[2023.08.20-14.35.14:065][  0]SourceControl: Info Source control is disabled
+[2023.08.20-14.35.14:078][  0]SourceControl: Info Source control is disabled
+[2023.08.20-14.35.14:454][  0]LogEngine: Initializing Engine...
+[2023.08.20-14.35.14:455][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2023.08.20-14.35.14:501][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2023.08.20-14.35.14:501][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2023.08.20-14.35.14:535][  0]LogAIModule: Creating AISystem for world Untitled
+[2023.08.20-14.35.14:550][  0]LogInit: XAudio2 using 'Speakers (Sound Blaster Audigy Fx)' : 6 channels at 48 kHz using 32 bits per sample (channel mask 0x3f)
+[2023.08.20-14.35.14:558][  0]LogInit: FAudioDevice initialized.
+[2023.08.20-14.35.14:578][  0]LogDerivedDataCache: Saved boot cache 0.02s 60MB C:/Users/PCHOME/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2023.08.20-14.35.14:583][  0]LogInit: Texture streaming: Enabled
+[2023.08.20-14.35.14:612][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2023.08.20-14.35.14:641][  0]LogInit: Transaction tracking system initialized
+[2023.08.20-14.35.14:737][  0]BlueprintLog: New page: Editor Load
+[2023.08.20-14.35.15:017][  0]LocalizationService: Info Localization service is disabled
+[2023.08.20-14.35.15:226][  0]LogConsoleResponse:Display: 
+[2023.08.20-14.35.15:276][  0]LogFileCache: Scanning file cache for directory 'E:/unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/' took 0.01s
+[2023.08.20-14.35.15:276][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2023.08.20-14.35.15:276][  0]LogCook:Display: Mobile HDR setting 1
+[2023.08.20-14.35.15:571][  0]SourceControl: Info Source control is disabled
+[2023.08.20-14.35.15:594][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 E:/UE4/UE_4.15/FeaturePacks/StarterContent.upack)
+[2023.08.20-14.35.15:797][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2023.08.20-14.35.15:813][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Architecture/Floor_400x400.uasset"
+[2023.08.20-14.35.15:822][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Architecture/Pillar_50x500.uasset"
+[2023.08.20-14.35.15:834][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
+[2023.08.20-14.35.15:842][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Architecture/Wall_400x200.uasset"
+[2023.08.20-14.35.15:847][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Architecture/Wall_400x300.uasset"
+[2023.08.20-14.35.15:862][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Architecture/Wall_400x400.uasset"
+[2023.08.20-14.35.15:872][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Architecture/Wall_500x500.uasset"
+[2023.08.20-14.35.15:879][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
+[2023.08.20-14.35.15:888][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
+[2023.08.20-14.35.15:900][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
+[2023.08.20-14.35.15:901][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
+[2023.08.20-14.35.15:913][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Collapse01.uasset"
+[2023.08.20-14.35.15:930][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Collapse02.uasset"
+[2023.08.20-14.35.15:931][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Collapse_Cue.uasset"
+[2023.08.20-14.35.15:944][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Explosion01.uasset"
+[2023.08.20-14.35.15:954][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Explosion02.uasset"
+[2023.08.20-14.35.15:965][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Explosion_Cue.uasset"
+[2023.08.20-14.35.15:976][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Fire01.uasset"
+[2023.08.20-14.35.15:987][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Fire01_Cue.uasset"
+[2023.08.20-14.35.16:000][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Fire_Sparks01.uasset"
+[2023.08.20-14.35.16:010][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2023.08.20-14.35.16:017][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Light01.uasset"
+[2023.08.20-14.35.16:023][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Light01_Cue.uasset"
+[2023.08.20-14.35.16:030][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Light02.uasset"
+[2023.08.20-14.35.16:039][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Light02_Cue.uasset"
+[2023.08.20-14.35.16:049][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Smoke01.uasset"
+[2023.08.20-14.35.16:060][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Smoke01_Cue.uasset"
+[2023.08.20-14.35.16:064][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
+[2023.08.20-14.35.16:088][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Starter_Birds01.uasset"
+[2023.08.20-14.35.16:132][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Starter_Music01.uasset"
+[2023.08.20-14.35.16:144][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
+[2023.08.20-14.35.16:166][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Starter_Wind05.uasset"
+[2023.08.20-14.35.16:185][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Starter_Wind06.uasset"
+[2023.08.20-14.35.16:200][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Steam01.uasset"
+[2023.08.20-14.35.16:211][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Audio/Steam01_Cue.uasset"
+[2023.08.20-14.35.16:220][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2023.08.20-14.35.16:231][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2023.08.20-14.35.16:243][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2023.08.20-14.35.16:248][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2023.08.20-14.35.16:255][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2023.08.20-14.35.16:262][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
+[2023.08.20-14.35.16:271][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2023.08.20-14.35.16:283][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
+[2023.08.20-14.35.16:284][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
+[2023.08.20-14.35.16:298][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
+[2023.08.20-14.35.16:301][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
+[2023.08.20-14.35.16:308][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
+[2023.08.20-14.35.16:310][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
+[2023.08.20-14.35.16:323][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
+[2023.08.20-14.35.16:333][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
+[2023.08.20-14.35.16:334][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
+[2023.08.20-14.35.16:674][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+[2023.08.20-14.35.16:676][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Maps/Advanced_Lighting.umap"
+[2023.08.20-14.35.16:686][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset"
+[2023.08.20-14.35.16:698][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Maps/Minimal_Default.umap"
+[2023.08.20-14.35.16:714][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset"
+[2023.08.20-14.35.16:743][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Maps/StarterMap.umap"
+[2023.08.20-14.35.16:814][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap_BuiltData.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Maps/StarterMap_BuiltData.uasset"
+[2023.08.20-14.35.16:821][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_AssetPlatform.uasset"
+[2023.08.20-14.35.16:832][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Basic_Floor.uasset"
+[2023.08.20-14.35.16:838][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Basic_Wall.uasset"
+[2023.08.20-14.35.16:846][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2023.08.20-14.35.16:856][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
+[2023.08.20-14.35.16:859][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2023.08.20-14.35.16:867][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2023.08.20-14.35.16:868][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2023.08.20-14.35.16:877][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2023.08.20-14.35.16:887][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2023.08.20-14.35.16:889][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2023.08.20-14.35.16:901][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2023.08.20-14.35.16:909][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
+[2023.08.20-14.35.16:916][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
+[2023.08.20-14.35.16:917][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
+[2023.08.20-14.35.16:923][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
+[2023.08.20-14.35.16:931][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
+[2023.08.20-14.35.16:932][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Glass.uasset"
+[2023.08.20-14.35.16:939][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Ground_Grass.uasset"
+[2023.08.20-14.35.16:944][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
+[2023.08.20-14.35.16:953][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Ground_Moss.uasset"
+[2023.08.20-14.35.16:960][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2023.08.20-14.35.16:967][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2023.08.20-14.35.16:968][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
+[2023.08.20-14.35.16:975][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Metal_Copper.uasset"
+[2023.08.20-14.35.16:983][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Metal_Gold.uasset"
+[2023.08.20-14.35.16:987][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Metal_Rust.uasset"
+[2023.08.20-14.35.16:988][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Metal_Steel.uasset"
+[2023.08.20-14.35.16:998][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
+[2023.08.20-14.35.17:012][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2023.08.20-14.35.17:020][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
+[2023.08.20-14.35.17:022][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Rock_Slate.uasset"
+[2023.08.20-14.35.17:025][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2023.08.20-14.35.17:032][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2023.08.20-14.35.17:041][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2023.08.20-14.35.17:050][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Tech_Panel.uasset"
+[2023.08.20-14.35.17:060][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Water_Lake.uasset"
+[2023.08.20-14.35.17:063][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Water_Ocean.uasset"
+[2023.08.20-14.35.17:071][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2023.08.20-14.35.17:080][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2023.08.20-14.35.17:088][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Wood_Oak.uasset"
+[2023.08.20-14.35.17:089][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Wood_Pine.uasset"
+[2023.08.20-14.35.17:094][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
+[2023.08.20-14.35.17:103][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
+[2023.08.20-14.35.17:143][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/P_Explosion.uasset"
+[2023.08.20-14.35.17:153][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/P_Fire.uasset"
+[2023.08.20-14.35.17:160][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/P_Smoke.uasset"
+[2023.08.20-14.35.17:166][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/P_Sparks.uasset"
+[2023.08.20-14.35.17:166][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/P_Steam_Lit.uasset"
+[2023.08.20-14.35.17:178][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/Materials/M_Burst.uasset"
+[2023.08.20-14.35.17:194][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2023.08.20-14.35.17:206][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
+[2023.08.20-14.35.17:207][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2023.08.20-14.35.17:220][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
+[2023.08.20-14.35.17:232][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
+[2023.08.20-14.35.17:241][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
+[2023.08.20-14.35.17:256][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
+[2023.08.20-14.35.17:269][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
+[2023.08.20-14.35.17:273][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Particles/Materials/M_Spark.uasset"
+[2023.08.20-14.35.17:280][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/MaterialSphere.uasset"
+[2023.08.20-14.35.17:281][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_Bush.uasset"
+[2023.08.20-14.35.17:282][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_Chair.uasset"
+[2023.08.20-14.35.17:284][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_CornerFrame.uasset"
+[2023.08.20-14.35.17:288][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_Couch.uasset"
+[2023.08.20-14.35.17:293][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_Door.uasset"
+[2023.08.20-14.35.17:295][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_DoorFrame.uasset"
+[2023.08.20-14.35.17:300][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_GlassWindow.uasset"
+[2023.08.20-14.35.17:311][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2023.08.20-14.35.17:312][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
+[2023.08.20-14.35.17:336][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2023.08.20-14.35.17:339][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_PillarFrame.uasset"
+[2023.08.20-14.35.17:339][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_PillarFrame300.uasset"
+[2023.08.20-14.35.17:354][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_Rock.uasset"
+[2023.08.20-14.35.17:369][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_Shelf.uasset"
+[2023.08.20-14.35.17:372][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_Stairs.uasset"
+[2023.08.20-14.35.17:381][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_Statue.uasset"
+[2023.08.20-14.35.17:389][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_TableRound.uasset"
+[2023.08.20-14.35.17:397][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/SM_WindowFrame.uasset"
+[2023.08.20-14.35.17:397][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/Materials/M_Bush.uasset"
+[2023.08.20-14.35.17:398][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/Materials/M_Chair.uasset"
+[2023.08.20-14.35.17:399][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/Materials/M_Door.uasset"
+[2023.08.20-14.35.17:401][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/Materials/M_Frame.uasset"
+[2023.08.20-14.35.17:413][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/Materials/M_Lamp.uasset"
+[2023.08.20-14.35.17:422][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2023.08.20-14.35.17:429][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2023.08.20-14.35.17:430][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/Materials/M_Rock.uasset"
+[2023.08.20-14.35.17:443][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/Materials/M_Shelf.uasset"
+[2023.08.20-14.35.17:450][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/Materials/M_Statue.uasset"
+[2023.08.20-14.35.17:457][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
+[2023.08.20-14.35.17:461][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Props/Materials/M_TableRound.uasset"
+[2023.08.20-14.35.17:468][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Cone.uasset"
+[2023.08.20-14.35.17:469][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Cube.uasset"
+[2023.08.20-14.35.17:472][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
+[2023.08.20-14.35.17:482][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2023.08.20-14.35.17:484][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Pipe.uasset"
+[2023.08.20-14.35.17:494][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
+[2023.08.20-14.35.17:504][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
+[2023.08.20-14.35.17:507][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Plane.uasset"
+[2023.08.20-14.35.17:517][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2023.08.20-14.35.17:532][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Sphere.uasset"
+[2023.08.20-14.35.17:547][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Torus.uasset"
+[2023.08.20-14.35.17:552][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Trim.uasset"
+[2023.08.20-14.35.17:561][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2023.08.20-14.35.17:573][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2023.08.20-14.35.17:583][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
+[2023.08.20-14.35.17:588][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Tube.uasset"
+[2023.08.20-14.35.17:598][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
+[2023.08.20-14.35.17:610][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
+[2023.08.20-14.35.17:628][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
+[2023.08.20-14.35.17:699][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2023.08.20-14.35.17:753][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2023.08.20-14.35.17:796][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2023.08.20-14.35.17:835][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2023.08.20-14.35.17:883][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2023.08.20-14.35.17:930][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2023.08.20-14.35.17:994][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2023.08.20-14.35.18:038][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2023.08.20-14.35.18:106][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2023.08.20-14.35.18:150][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2023.08.20-14.35.18:199][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2023.08.20-14.35.18:239][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2023.08.20-14.35.18:294][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2023.08.20-14.35.18:302][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Burst_M.uasset"
+[2023.08.20-14.35.18:312][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Bush_D.uasset"
+[2023.08.20-14.35.18:318][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Bush_N.uasset"
+[2023.08.20-14.35.18:332][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2023.08.20-14.35.18:337][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2023.08.20-14.35.18:344][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Chair_M.uasset"
+[2023.08.20-14.35.18:360][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Chair_N.uasset"
+[2023.08.20-14.35.18:375][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
+[2023.08.20-14.35.18:439][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2023.08.20-14.35.18:457][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2023.08.20-14.35.18:521][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2023.08.20-14.35.18:544][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2023.08.20-14.35.18:564][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2023.08.20-14.35.18:603][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2023.08.20-14.35.18:636][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2023.08.20-14.35.18:690][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2023.08.20-14.35.18:750][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2023.08.20-14.35.18:793][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2023.08.20-14.35.18:828][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2023.08.20-14.35.18:891][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2023.08.20-14.35.18:934][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2023.08.20-14.35.19:461][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2023.08.20-14.35.19:557][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2023.08.20-14.35.19:605][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2023.08.20-14.35.19:621][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2023.08.20-14.35.19:666][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2023.08.20-14.35.19:680][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Door_M.uasset"
+[2023.08.20-14.35.19:692][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Door_N.uasset"
+[2023.08.20-14.35.19:703][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
+[2023.08.20-14.35.19:729][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
+[2023.08.20-14.35.19:737][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
+[2023.08.20-14.35.19:746][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
+[2023.08.20-14.35.19:753][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Frame_M.uasset"
+[2023.08.20-14.35.19:766][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Frame_N.uasset"
+[2023.08.20-14.35.19:771][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Gradinet_01.uasset"
+[2023.08.20-14.35.19:841][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
+[2023.08.20-14.35.19:904][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
+[2023.08.20-14.35.19:965][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2023.08.20-14.35.20:005][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2023.08.20-14.35.20:070][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
+[2023.08.20-14.35.20:119][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
+[2023.08.20-14.35.20:132][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Lamp_M.uasset"
+[2023.08.20-14.35.20:148][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Lamp_N.uasset"
+[2023.08.20-14.35.20:211][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_MacroVariation.uasset"
+[2023.08.20-14.35.20:266][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2023.08.20-14.35.20:313][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
+[2023.08.20-14.35.20:364][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
+[2023.08.20-14.35.20:858][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
+[2023.08.20-14.35.20:982][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
+[2023.08.20-14.35.21:120][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
+[2023.08.20-14.35.21:179][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
+[2023.08.20-14.35.21:216][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
+[2023.08.20-14.35.21:274][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
+[2023.08.20-14.35.21:306][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_RockMesh_M.uasset"
+[2023.08.20-14.35.21:348][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_RockMesh_N.uasset"
+[2023.08.20-14.35.21:410][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2023.08.20-14.35.21:466][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
+[2023.08.20-14.35.21:511][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2023.08.20-14.35.21:568][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2023.08.20-14.35.21:608][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2023.08.20-14.35.21:684][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
+[2023.08.20-14.35.21:832][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
+[2023.08.20-14.35.21:940][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2023.08.20-14.35.21:962][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Shelf_M.uasset"
+[2023.08.20-14.35.21:976][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Shelf_N.uasset"
+[2023.08.20-14.35.21:977][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
+[2023.08.20-14.35.21:996][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
+[2023.08.20-14.35.22:003][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
+[2023.08.20-14.35.22:015][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Spark_Core.uasset"
+[2023.08.20-14.35.22:026][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Statue_M.uasset"
+[2023.08.20-14.35.22:041][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Statue_N.uasset"
+[2023.08.20-14.35.22:055][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_TableRound_M.uasset"
+[2023.08.20-14.35.22:074][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_TableRound_N.uasset"
+[2023.08.20-14.35.22:084][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
+[2023.08.20-14.35.22:092][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
+[2023.08.20-14.35.22:102][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2023.08.20-14.35.22:118][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2023.08.20-14.35.22:135][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
+[2023.08.20-14.35.22:153][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
+[2023.08.20-14.35.22:174][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Water_M.uasset"
+[2023.08.20-14.35.22:194][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Water_N.uasset"
+[2023.08.20-14.35.22:223][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2023.08.20-14.35.22:252][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2023.08.20-14.35.22:275][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2023.08.20-14.35.22:312][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
+[2023.08.20-14.35.22:349][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
+[2023.08.20-14.35.22:404][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
+[2023.08.20-14.35.22:431][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
+[2023.08.20-14.35.22:467][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2023.08.20-14.35.22:495][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2023.08.20-14.35.22:550][  0]LogRenderer: Reallocating scene render targets to support 256x256 NumSamples 1 (Frame:2).
+[2023.08.20-14.35.22:633][  0]LogSavePackage: Save=5.77ms
+[2023.08.20-14.35.22:633][  0]LogSavePackage: Moving '../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Saved/Floor_400x400C72A921E44461B74C7993DB067BA02CF.tmp' to '../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Architecture/Floor_400x400.uasset'
+[2023.08.20-14.35.22:634][  0]LogSavePackage:Display: Finished SavePackage ../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Architecture/Floor_400x400.uasset
+[2023.08.20-14.35.22:634][  0]LogFeaturePack:Warning: Inserted 1 feature packs
+[2023.08.20-14.35.22:635][  0]Cmd: MAP LOAD FILE="../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2023.08.20-14.35.22:635][  0]LightingResults: New page: Lighting Build
+[2023.08.20-14.35.22:646][  0]MapCheck: New page: Map Check
+[2023.08.20-14.35.22:646][  0]LightingResults: New page: Lighting Build
+[2023.08.20-14.35.23:078][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2023.08.20-14.35.23:140][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2023.08.20-14.35.23:140][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2023.08.20-14.35.23:152][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 12.624ms to complete.
+[2023.08.20-14.35.23:152][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.518
+[2023.08.20-14.35.23:266][  0]LogCollectionManager: Loaded 0 collections in 0.000409 seconds
+[2023.08.20-14.35.23:327][  0]LogFileCache: Scanning file cache for directory 'E:/unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Saved/Collections/' took 0.01s
+[2023.08.20-14.35.23:327][  0]LogFileCache: Scanning file cache for directory 'E:/unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/Developers/PCHOME/Collections/' took 0.01s
+[2023.08.20-14.35.23:327][  0]LogFileCache: Scanning file cache for directory 'E:/unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/Collections/' took 0.01s
+[2023.08.20-14.35.23:327][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2023.08.20-14.35.23:332][  0]LogContentBrowser: Native class hierarchy populated in 0.0045 seconds. Added 2245 classes and 453 folders.
+[2023.08.20-14.35.23:351][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2023.08.20-14.35.23:367][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2023.08.20-14.35.23:380][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 1 classes and 2 folders.
+[2023.08.20-14.35.23:399][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2023.08.20-14.35.23:455][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2023.08.20-14.35.23:455][  0]LogLoad: (Engine Initialization) Total time: 13.97 seconds
+[2023.08.20-14.35.23:455][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.03 seconds
+[2023.08.20-14.35.23:455][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2023.08.20-14.35.23:455][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2023.08.20-14.35.23:463][  0]LogOcInput: OculusInput pre-init called
+[2023.08.20-14.35.23:473][  0]LogAssetRegistry: Asset discovery search completed in 10.4574 seconds
+[2023.08.20-14.35.23:473][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000003 seconds (found 0 objects)
+[2023.08.20-14.35.23:473][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000011 seconds (updated 0 objects)
+[2023.08.20-14.35.23:630][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2023.08.20-14.35.23:634][  0]LogSlate: Took 0.000125 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2023.08.20-14.35.23:637][  0]LogSlate: Took 0.000271 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2023.08.20-14.35.23:640][  0]LogSlate: Took 0.000197 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2023.08.20-14.35.23:706][  0]LogRenderer: Reallocating scene render targets to support 1208x568 NumSamples 1 (Frame:3).
+[2023.08.20-14.35.23:706][  0]LogSlate: Took 0.000152 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2023.08.20-14.36.13:037][734]LogSlate: Took 0.000098 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2023.08.20-14.36.13:062][734]LogMaterial: Missing cached shader map for material M_FakeRimSchlicks, compiling. 
+[2023.08.20-14.36.13:062][734]LogTemp:Display: Added material ShaderMap 0x00000214E4AF8B80 with Material 0x00000214C0D71000 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.13:080][734]LogTemp:Display: Kicking off shader compilation for M_FakeRimSchlicks, GameThreadShaderMap 0x00000214E4AF8B80
+[2023.08.20-14.36.13:081][734]LogMaterial: Missing cached shader map for material M_FakeRimSchlicks, compiling. 
+[2023.08.20-14.36.13:082][734]LogTemp:Display: Added material ShaderMap 0x00000214E4787200 with Material 0x00000214E4AB5A80 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.13:090][734]LogTemp:Display: Kicking off shader compilation for M_FakeRimSchlicks, GameThreadShaderMap 0x00000214E4787200
+[2023.08.20-14.36.13:091][734]LogMaterial: Missing cached shader map for material matMatte, compiling. 
+[2023.08.20-14.36.13:091][734]LogTemp:Display: Added material ShaderMap 0x00000214E460C480 with Material 0x00000214E3E5F400 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.13:100][734]LogTemp:Display: Kicking off shader compilation for matMatte, GameThreadShaderMap 0x00000214E460C480
+[2023.08.20-14.36.13:112][734]LogMaterial: Missing cached shader map for material M_SegmentFresnelStandard, compiling. 
+[2023.08.20-14.36.13:113][734]LogTemp:Display: Added material ShaderMap 0x00000214E4161980 with Material 0x00000214E4AEE500 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.13:131][734]LogTemp:Display: Kicking off shader compilation for M_SegmentFresnelStandard, GameThreadShaderMap 0x00000214E4161980
+[2023.08.20-14.36.13:133][734]LogMaterial: Missing cached shader map for material M_SegmentFresnelStandard, compiling. 
+[2023.08.20-14.36.13:133][734]LogTemp:Display: Added material ShaderMap 0x00000214EA322780 with Material 0x00000214E9688B80 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.13:151][734]LogTemp:Display: Kicking off shader compilation for M_SegmentFresnelStandard, GameThreadShaderMap 0x00000214EA322780
+[2023.08.20-14.36.13:152][734]LogMaterial: Missing cached shader map for material M_FakeRimStandard, compiling. 
+[2023.08.20-14.36.13:153][734]LogTemp:Display: Added material ShaderMap 0x00000214EAACB580 with Material 0x00000214E4ADAB00 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.13:161][734]LogTemp:Display: Kicking off shader compilation for M_FakeRimStandard, GameThreadShaderMap 0x00000214EAACB580
+[2023.08.20-14.36.13:163][734]LogMaterial: Missing cached shader map for material M_FakeRimStandard, compiling. 
+[2023.08.20-14.36.13:164][734]LogTemp:Display: Added material ShaderMap 0x00000214EA70C480 with Material 0x00000214EAAB7D00 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.13:172][734]LogTemp:Display: Kicking off shader compilation for M_FakeRimStandard, GameThreadShaderMap 0x00000214EA70C480
+[2023.08.20-14.36.13:173][734]LogMaterial: Missing cached shader map for material M_SegmentFresnelStandardFunc, compiling. 
+[2023.08.20-14.36.13:174][734]LogTemp:Display: Added material ShaderMap 0x00000214F272D600 with Material 0x00000214E4AEEE00 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.13:191][734]LogTemp:Display: Kicking off shader compilation for M_SegmentFresnelStandardFunc, GameThreadShaderMap 0x00000214F272D600
+[2023.08.20-14.36.13:191][734]LogMaterial: Missing cached shader map for material M_SegmentFresnelStandardFunc, compiling. 
+[2023.08.20-14.36.13:193][734]LogTemp:Display: Added material ShaderMap 0x00000214F2EF2780 with Material 0x00000214F2ECF400 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.13:211][734]LogTemp:Display: Kicking off shader compilation for M_SegmentFresnelStandardFunc, GameThreadShaderMap 0x00000214F2EF2780
+[2023.08.20-14.36.13:212][734]LogMaterial: Missing cached shader map for material M_FakeRimStandardFunc, compiling. 
+[2023.08.20-14.36.13:212][734]LogTemp:Display: Added material ShaderMap 0x00000214F4EB3900 with Material 0x00000214E4B1D900 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.13:221][734]LogTemp:Display: Kicking off shader compilation for M_FakeRimStandardFunc, GameThreadShaderMap 0x00000214F4EB3900
+[2023.08.20-14.36.13:222][734]LogMaterial: Missing cached shader map for material M_FakeRimStandardFunc, compiling. 
+[2023.08.20-14.36.13:223][734]LogTemp:Display: Added material ShaderMap 0x00000214F5AD5280 with Material 0x00000214F4EBA980 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.13:231][734]LogTemp:Display: Kicking off shader compilation for M_FakeRimStandardFunc, GameThreadShaderMap 0x00000214F5AD5280
+[2023.08.20-14.36.13:232][734]LogAIModule: Creating AISystem for world overviewFresnel
+[2023.08.20-14.36.13:251][734]LightingResults: New page: Lighting Build
+[2023.08.20-14.36.13:252][734]LoadErrors: New page: Loading map: overviewFresnel.umap
+[2023.08.20-14.36.13:286][734]MapCheck: New page: Map Check
+[2023.08.20-14.36.13:286][734]LightingResults: New page: Lighting Build
+[2023.08.20-14.36.13:294][734]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2023.08.20-14.36.13:296][734]Cmd: MAP CHECKDEP NOCLEARLOG
+[2023.08.20-14.36.13:311][734]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 14.841ms to complete.
+[2023.08.20-14.36.13:311][734]LogFileHelpers: Loading map 'overviewFresnel' took 0.061
+[2023.08.20-14.36.15:913][876]LogTemp:Display: Finished compile of shader map 0x00000214E460C480
+[2023.08.20-14.36.15:913][876]LogTemp:Display: Shader map matMatte complete, GameThreadShaderMap 0x00000214E460C480, marking material matMatte as finished
+[2023.08.20-14.36.15:913][876]LogTemp:Display: Marking material as finished 0x00000214E3E5F400
+[2023.08.20-14.36.16:184][887]LogTemp:Display: Finished compile of shader map 0x00000214E4AF8B80
+[2023.08.20-14.36.16:184][887]LogTemp:Display: Shader map M_FakeRimSchlicks complete, GameThreadShaderMap 0x00000214E4AF8B80, marking material M_FakeRimSchlicks as finished
+[2023.08.20-14.36.16:184][887]LogTemp:Display: Marking material as finished 0x00000214C0D71000
+[2023.08.20-14.36.16:280][892]LogTemp:Display: Finished compile of shader map 0x00000214E4787200
+[2023.08.20-14.36.16:280][892]LogTemp:Display: Shader map M_FakeRimSchlicks complete, GameThreadShaderMap 0x00000214E4787200, marking material M_FakeRimSchlicks as finished
+[2023.08.20-14.36.16:280][892]LogTemp:Display: Marking material as finished 0x00000214E4AB5A80
+[2023.08.20-14.36.16:674][913]LogTemp:Display: Finished compile of shader map 0x00000214E4161980
+[2023.08.20-14.36.16:674][913]LogTemp:Display: Shader map M_SegmentFresnelStandard complete, GameThreadShaderMap 0x00000214E4161980, marking material M_SegmentFresnelStandard as finished
+[2023.08.20-14.36.16:674][913]LogTemp:Display: Marking material as finished 0x00000214E4AEE500
+[2023.08.20-14.36.18:052][981]LogTemp:Display: Finished compile of shader map 0x00000214EAACB580
+[2023.08.20-14.36.18:052][981]LogTemp:Display: Shader map M_FakeRimStandard complete, GameThreadShaderMap 0x00000214EAACB580, marking material M_FakeRimStandard as finished
+[2023.08.20-14.36.18:052][981]LogTemp:Display: Marking material as finished 0x00000214E4ADAB00
+[2023.08.20-14.36.18:147][985]LogTemp:Display: Finished compile of shader map 0x00000214EA322780
+[2023.08.20-14.36.18:147][985]LogTemp:Display: Shader map M_SegmentFresnelStandard complete, GameThreadShaderMap 0x00000214EA322780, marking material M_SegmentFresnelStandard as finished
+[2023.08.20-14.36.18:147][985]LogTemp:Display: Marking material as finished 0x00000214E9688B80
+[2023.08.20-14.36.18:664][  9]LogTemp:Display: Finished compile of shader map 0x00000214EA70C480
+[2023.08.20-14.36.18:664][  9]LogTemp:Display: Shader map M_FakeRimStandard complete, GameThreadShaderMap 0x00000214EA70C480, marking material M_FakeRimStandard as finished
+[2023.08.20-14.36.18:664][  9]LogTemp:Display: Marking material as finished 0x00000214EAAB7D00
+[2023.08.20-14.36.19:650][ 61]LogTemp:Display: Finished compile of shader map 0x00000214F272D600
+[2023.08.20-14.36.19:650][ 61]LogTemp:Display: Shader map M_SegmentFresnelStandardFunc complete, GameThreadShaderMap 0x00000214F272D600, marking material M_SegmentFresnelStandardFunc as finished
+[2023.08.20-14.36.19:650][ 61]LogTemp:Display: Marking material as finished 0x00000214E4AEEE00
+[2023.08.20-14.36.20:200][114]LogTemp:Display: Finished compile of shader map 0x00000214F4EB3900
+[2023.08.20-14.36.20:200][114]LogTemp:Display: Shader map M_FakeRimStandardFunc complete, GameThreadShaderMap 0x00000214F4EB3900, marking material M_FakeRimStandardFunc as finished
+[2023.08.20-14.36.20:200][114]LogTemp:Display: Marking material as finished 0x00000214E4B1D900
+[2023.08.20-14.36.20:209][115]LogTemp:Display: Finished compile of shader map 0x00000214F2EF2780
+[2023.08.20-14.36.20:209][115]LogTemp:Display: Shader map M_SegmentFresnelStandardFunc complete, GameThreadShaderMap 0x00000214F2EF2780, marking material M_SegmentFresnelStandardFunc as finished
+[2023.08.20-14.36.20:209][115]LogTemp:Display: Marking material as finished 0x00000214F2ECF400
+[2023.08.20-14.36.20:398][137]LogTemp:Display: Finished compile of shader map 0x00000214F5AD5280
+[2023.08.20-14.36.20:398][137]LogTemp:Display: Shader map M_FakeRimStandardFunc complete, GameThreadShaderMap 0x00000214F5AD5280, marking material M_FakeRimStandardFunc as finished
+[2023.08.20-14.36.20:398][137]LogTemp:Display: Marking material as finished 0x00000214F4EBA980
+[2023.08.20-14.36.24:574][636]LogMaterial: Missing cached shader map for material M_SegmentFresnelSchlicksRamp3CC, compiling. 
+[2023.08.20-14.36.24:575][636]LogTemp:Display: Added material ShaderMap 0x00000214F4F94F00 with Material 0x00000214B2309300 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.24:592][636]LogTemp:Display: Kicking off shader compilation for M_SegmentFresnelSchlicksRamp3CC, GameThreadShaderMap 0x00000214F4F94F00
+[2023.08.20-14.36.24:593][636]LogMaterial: Missing cached shader map for material M_FakeRimSchlicksRamp3CC, compiling. 
+[2023.08.20-14.36.24:594][636]LogTemp:Display: Added material ShaderMap 0x00000214F5AA2400 with Material 0x00000214B230BA00 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.24:601][636]LogTemp:Display: Kicking off shader compilation for M_FakeRimSchlicksRamp3CC, GameThreadShaderMap 0x00000214F5AA2400
+[2023.08.20-14.36.24:603][636]LogMaterial: Missing cached shader map for material M_FakeRimSchlicksRamp3CC, compiling. 
+[2023.08.20-14.36.24:604][636]LogTemp:Display: Added material ShaderMap 0x00000214E939F900 with Material 0x00000214B22F1480 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.24:611][636]LogTemp:Display: Kicking off shader compilation for M_FakeRimSchlicksRamp3CC, GameThreadShaderMap 0x00000214E939F900
+[2023.08.20-14.36.24:612][636]LogMaterial: Missing cached shader map for material M_OnlyFresnelSchlicksRamp3CC, compiling. 
+[2023.08.20-14.36.24:613][636]LogTemp:Display: Added material ShaderMap 0x00000214EAA2CF00 with Material 0x00000214B22FCA00 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.24:629][636]LogTemp:Display: Kicking off shader compilation for M_OnlyFresnelSchlicksRamp3CC, GameThreadShaderMap 0x00000214EAA2CF00
+[2023.08.20-14.36.24:631][636]LogMaterial: Missing cached shader map for material M_SegmentFresnelSchlicksRamp3CC, compiling. 
+[2023.08.20-14.36.24:632][636]LogTemp:Display: Added material ShaderMap 0x00000214F2AAA080 with Material 0x00000214B1317400 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.24:650][636]LogTemp:Display: Kicking off shader compilation for M_SegmentFresnelSchlicksRamp3CC, GameThreadShaderMap 0x00000214F2AAA080
+[2023.08.20-14.36.24:650][636]LogAIModule: Creating AISystem for world overviewFresnelRamp3Color
+[2023.08.20-14.36.24:677][636]LightingResults: New page: Lighting Build
+[2023.08.20-14.36.24:679][636]LoadErrors: New page: Loading map: overviewFresnelRamp3Color.umap
+[2023.08.20-14.36.24:681][636]MapCheck: New page: Map Check
+[2023.08.20-14.36.24:681][636]LightingResults: New page: Lighting Build
+[2023.08.20-14.36.24:703][636]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2023.08.20-14.36.24:707][636]Cmd: MAP CHECKDEP NOCLEARLOG
+[2023.08.20-14.36.24:756][636]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 48.693ms to complete.
+[2023.08.20-14.36.24:756][636]LogFileHelpers: Loading map 'overviewFresnelRamp3Color' took 0.082
+[2023.08.20-14.36.27:519][775]LogTemp:Display: Finished compile of shader map 0x00000214E939F900
+[2023.08.20-14.36.27:519][775]LogTemp:Display: Shader map M_FakeRimSchlicksRamp3CC complete, GameThreadShaderMap 0x00000214E939F900, marking material M_FakeRimSchlicksRamp3CC as finished
+[2023.08.20-14.36.27:519][775]LogTemp:Display: Marking material as finished 0x00000214B22F1480
+[2023.08.20-14.36.27:571][777]LogTemp:Display: Finished compile of shader map 0x00000214F5AA2400
+[2023.08.20-14.36.27:571][777]LogTemp:Display: Shader map M_FakeRimSchlicksRamp3CC complete, GameThreadShaderMap 0x00000214F5AA2400, marking material M_FakeRimSchlicksRamp3CC as finished
+[2023.08.20-14.36.27:571][777]LogTemp:Display: Marking material as finished 0x00000214B230BA00
+[2023.08.20-14.36.27:658][782]LogTemp:Display: Finished compile of shader map 0x00000214F4F94F00
+[2023.08.20-14.36.27:658][782]LogTemp:Display: Shader map M_SegmentFresnelSchlicksRamp3CC complete, GameThreadShaderMap 0x00000214F4F94F00, marking material M_SegmentFresnelSchlicksRamp3CC as finished
+[2023.08.20-14.36.27:658][782]LogTemp:Display: Marking material as finished 0x00000214B2309300
+[2023.08.20-14.36.28:457][860]LogTemp:Display: Finished compile of shader map 0x00000214EAA2CF00
+[2023.08.20-14.36.28:457][860]LogTemp:Display: Shader map M_OnlyFresnelSchlicksRamp3CC complete, GameThreadShaderMap 0x00000214EAA2CF00, marking material M_OnlyFresnelSchlicksRamp3CC as finished
+[2023.08.20-14.36.28:457][860]LogTemp:Display: Marking material as finished 0x00000214B22FCA00
+[2023.08.20-14.36.28:926][915]LogTemp:Display: Finished compile of shader map 0x00000214F2AAA080
+[2023.08.20-14.36.28:926][915]LogTemp:Display: Shader map M_SegmentFresnelSchlicksRamp3CC complete, GameThreadShaderMap 0x00000214F2AAA080, marking material M_SegmentFresnelSchlicksRamp3CC as finished
+[2023.08.20-14.36.28:926][915]LogTemp:Display: Marking material as finished 0x00000214B1317400
+[2023.08.20-14.36.36:233][788]LogMaterial: Missing cached shader map for material Material_0, compiling. 
+[2023.08.20-14.36.36:234][788]LogTemp:Display: Added material ShaderMap 0x00000214F2EC2E80 with Material 0x00000214E3E5CE80 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.36:235][788]LogTemp:Display: Kicking off shader compilation for Material_0, GameThreadShaderMap 0x00000214F2EC2E80
+[2023.08.20-14.36.36:243][789]LogMaterial: Missing cached shader map for material Material_1, compiling. 
+[2023.08.20-14.36.36:243][789]LogTemp:Display: Added material ShaderMap 0x00000214B19AB580 with Material 0x00000214C0E99C00 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.36:245][789]LogTemp:Display: Kicking off shader compilation for Material_1, GameThreadShaderMap 0x00000214B19AB580
+[2023.08.20-14.36.36:251][790]LogMaterial: Missing cached shader map for material Material_2, compiling. 
+[2023.08.20-14.36.36:251][790]LogTemp:Display: Added material ShaderMap 0x00000214C0E5AB00 with Material 0x00000214B3CA7400 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.36:253][790]LogTemp:Display: Kicking off shader compilation for Material_2, GameThreadShaderMap 0x00000214C0E5AB00
+[2023.08.20-14.36.36:255][790]LogMaterial: Missing cached shader map for material Material_3, compiling. 
+[2023.08.20-14.36.36:255][790]LogTemp:Display: Added material ShaderMap 0x00000214DB238480 with Material 0x0000021492027A00 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.36:257][790]LogTemp:Display: Kicking off shader compilation for Material_3, GameThreadShaderMap 0x00000214DB238480
+[2023.08.20-14.36.36:264][791]LogMaterial: Missing cached shader map for material Material_4, compiling. 
+[2023.08.20-14.36.36:265][791]LogTemp:Display: Added material ShaderMap 0x00000214BDE08480 with Material 0x0000021492025780 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.36:266][791]LogTemp:Display: Kicking off shader compilation for Material_4, GameThreadShaderMap 0x00000214BDE08480
+[2023.08.20-14.36.36:269][791]LogMaterial: Missing cached shader map for material Material_5, compiling. 
+[2023.08.20-14.36.36:270][791]LogTemp:Display: Added material ShaderMap 0x00000214F2EDE780 with Material 0x00000214B3CB2E00 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.36:271][791]LogTemp:Display: Kicking off shader compilation for Material_5, GameThreadShaderMap 0x00000214F2EDE780
+[2023.08.20-14.36.36:280][792]LogMaterial: Missing cached shader map for material Material_6, compiling. 
+[2023.08.20-14.36.36:280][792]LogTemp:Display: Added material ShaderMap 0x00000214C5F06E80 with Material 0x00000214B199A380 to ShaderMapsBeingCompiled
+[2023.08.20-14.36.36:283][792]LogTemp:Display: Kicking off shader compilation for Material_6, GameThreadShaderMap 0x00000214C5F06E80
+[2023.08.20-14.36.36:629][825]LogTemp:Display: Finished compile of shader map 0x00000214F2EC2E80
+[2023.08.20-14.36.36:629][825]LogTemp:Display: Shader map Material_0 complete, GameThreadShaderMap 0x00000214F2EC2E80, marking material Material_0 as finished
+[2023.08.20-14.36.36:629][825]LogTemp:Display: Marking material as finished 0x00000214E3E5CE80
+[2023.08.20-14.36.36:639][826]LogTemp:Display: Finished compile of shader map 0x00000214B19AB580
+[2023.08.20-14.36.36:639][826]LogTemp:Display: Shader map Material_1 complete, GameThreadShaderMap 0x00000214B19AB580, marking material Material_1 as finished
+[2023.08.20-14.36.36:639][826]LogTemp:Display: Marking material as finished 0x00000214C0E99C00
+[2023.08.20-14.36.36:657][828]LogTemp:Display: Finished compile of shader map 0x00000214DB238480
+[2023.08.20-14.36.36:657][828]LogTemp:Display: Shader map Material_3 complete, GameThreadShaderMap 0x00000214DB238480, marking material Material_3 as finished
+[2023.08.20-14.36.36:657][828]LogTemp:Display: Marking material as finished 0x0000021492027A00
+[2023.08.20-14.36.36:672][830]LogTemp:Display: Finished compile of shader map 0x00000214C5F06E80
+[2023.08.20-14.36.36:672][830]LogTemp:Display: Shader map Material_6 complete, GameThreadShaderMap 0x00000214C5F06E80, marking material Material_6 as finished
+[2023.08.20-14.36.36:672][830]LogTemp:Display: Marking material as finished 0x00000214B199A380
+[2023.08.20-14.36.36:673][830]LogTemp:Display: Finished compile of shader map 0x00000214C0E5AB00
+[2023.08.20-14.36.36:673][830]LogTemp:Display: Shader map Material_2 complete, GameThreadShaderMap 0x00000214C0E5AB00, marking material Material_2 as finished
+[2023.08.20-14.36.36:673][830]LogTemp:Display: Marking material as finished 0x00000214B3CA7400
+[2023.08.20-14.36.36:680][831]LogTemp:Display: Finished compile of shader map 0x00000214BDE08480
+[2023.08.20-14.36.36:680][831]LogTemp:Display: Shader map Material_4 complete, GameThreadShaderMap 0x00000214BDE08480, marking material Material_4 as finished
+[2023.08.20-14.36.36:680][831]LogTemp:Display: Marking material as finished 0x0000021492025780
+[2023.08.20-14.36.36:680][831]LogTemp:Display: Finished compile of shader map 0x00000214F2EDE780
+[2023.08.20-14.36.36:680][831]LogTemp:Display: Shader map Material_5 complete, GameThreadShaderMap 0x00000214F2EDE780, marking material Material_5 as finished
+[2023.08.20-14.36.36:680][831]LogTemp:Display: Marking material as finished 0x00000214B3CB2E00
+[2023.08.20-14.36.43:363][631]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2023.08.20-14.36.44:207][631]LogAIModule: Creating AISystem for world Advanced_Lighting
+[2023.08.20-14.36.44:243][631]LogAIModule: Creating AISystem for world Minimal_Default
+[2023.08.20-14.36.45:169][631]LogAIModule: Creating AISystem for world StarterMap
+[2023.08.20-14.37.28:070][646]LogMaterial: Missing cached shader map for material M_OnlyFresnelSchlicks, compiling. 
+[2023.08.20-14.37.28:071][646]LogTemp:Display: Added material ShaderMap 0x000002148A0C7C80 with Material 0x00000214E968A800 to ShaderMapsBeingCompiled
+[2023.08.20-14.37.28:087][646]LogTemp:Display: Kicking off shader compilation for M_OnlyFresnelSchlicks, GameThreadShaderMap 0x000002148A0C7C80
+[2023.08.20-14.37.28:090][646]LogMaterial: Missing cached shader map for material M_SegmentFresnelSchlicks, compiling. 
+[2023.08.20-14.37.28:091][646]LogTemp:Display: Added material ShaderMap 0x00000214F2EC1600 with Material 0x00000214B1122200 to ShaderMapsBeingCompiled
+[2023.08.20-14.37.28:106][646]LogTemp:Display: Kicking off shader compilation for M_SegmentFresnelSchlicks, GameThreadShaderMap 0x00000214F2EC1600
+[2023.08.20-14.37.30:602][716]LogTemp:Display: Finished compile of shader map 0x000002148A0C7C80
+[2023.08.20-14.37.30:602][716]LogTemp:Display: Shader map M_OnlyFresnelSchlicks complete, GameThreadShaderMap 0x000002148A0C7C80, marking material M_OnlyFresnelSchlicks as finished
+[2023.08.20-14.37.30:602][716]LogTemp:Display: Marking material as finished 0x00000214E968A800
+[2023.08.20-14.37.30:682][725]LogTemp:Display: Finished compile of shader map 0x00000214F2EC1600
+[2023.08.20-14.37.30:682][725]LogTemp:Display: Shader map M_SegmentFresnelSchlicks complete, GameThreadShaderMap 0x00000214F2EC1600, marking material M_SegmentFresnelSchlicks as finished
+[2023.08.20-14.37.30:682][725]LogTemp:Display: Marking material as finished 0x00000214B1122200
+[2023.08.20-14.37.32:118][896]LogAIModule: Creating AISystem for world overviewFresnel
+[2023.08.20-14.37.32:127][896]LightingResults: New page: Lighting Build
+[2023.08.20-14.37.32:128][896]LoadErrors: New page: Loading map: overviewFresnel.umap
+[2023.08.20-14.37.32:128][896]MapCheck: New page: Map Check
+[2023.08.20-14.37.32:128][896]LightingResults: New page: Lighting Build
+[2023.08.20-14.37.32:140][896]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2023.08.20-14.37.32:142][896]Cmd: MAP CHECKDEP NOCLEARLOG
+[2023.08.20-14.37.32:156][896]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 14.203ms to complete.
+[2023.08.20-14.37.32:156][896]LogFileHelpers: Loading map 'overviewFresnel' took 0.029
+[2023.08.20-14.39.08:492][650]Cmd: QUIT_EDITOR
+[2023.08.20-14.39.08:507][650]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2023.08.20-14.39.08:520][650]LogExit: Preparing to exit.
+[2023.08.20-14.39.08:924][650]LogDirectoryWatcher: A directory notification for 'E:/unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/' was aborted.
+[2023.08.20-14.39.08:936][650]LogExit: Editor shut down
+[2023.08.20-14.39.08:936][650]LogExit: Transaction tracking system shut down
+[2023.08.20-14.39.08:964][650]LogObj: Freed 0b from 0 cluster array pools.
+[2023.08.20-14.39.08:964][650]LogExit: Object subsystem successfully closed.
+[2023.08.20-14.39.08:982][650]LogD3D11RHI: Shutdown
+[2023.08.20-14.39.08:982][650]LogD3D11RHI: CleanupD3DDevice
+[2023.08.20-14.39.09:022][650]LogD3D11RHI: ~FD3D11DynamicRHI
+[2023.08.20-14.39.09:025][650]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2023.08.20-14.39.09:025][650]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2023.08.20-14.39.09:025][650]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2023.08.20-14.39.09:025][650]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2023.08.20-14.39.09:025][650]LogDirectoryWatcher: A directory notification for 'E:/UE4/UE_4.15/FeaturePacks/' was aborted.
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2023.08.20-14.39.09:026][650]LogDirectoryWatcher: A directory notification for 'E:/unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/Collections/' was aborted.
+[2023.08.20-14.39.09:026][650]LogDirectoryWatcher: A directory notification for 'E:/unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/Developers/PCHOME/Collections/' was aborted.
+[2023.08.20-14.39.09:026][650]LogDirectoryWatcher: A directory notification for 'E:/unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Saved/Collections/' was aborted.
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module Media (443)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2023.08.20-14.39.09:026][650]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2023.08.20-14.39.09:253][650]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2023.08.20-14.39.09:296][650]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2023.08.20-14.39.09:407][650]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2023.08.20-14.39.09:408][650]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2023.08.20-14.39.09:409][650]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2023.08.20-14.39.09:409][650]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2023.08.20-14.39.09:409][650]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2023.08.20-14.39.09:409][650]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2023.08.20-14.39.09:409][650]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2023.08.20-14.39.09:409][650]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2023.08.20-14.39.09:409][650]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2023.08.20-14.39.09:510][650]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2023.08.20-14.39.09:791][650]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2023.08.20-14.39.09:791][650]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2023.08.20-14.39.09:791][650]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2023.08.20-14.39.09:791][650]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2023.08.20-14.39.09:791][650]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2023.08.20-14.39.09:791][650]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2023.08.20-14.39.09:791][650]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2023.08.20-14.39.09:792][650]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2023.08.20-14.39.09:794][650]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2023.08.20-14.39.09:794][650]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2023.08.20-14.39.09:794][650]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2023.08.20-14.39.09:794][650]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2023.08.20-14.39.09:794][650]LogModuleManager: Shutting down and abandoning module Core (154)
+[2023.08.20-14.39.09:794][650]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2023.08.20-14.39.09:830][650]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2023.08.20-14.39.09:830][650]LogDirectoryWatcher: A directory notification for '../../../../../unrealcloud/AdvancedFresnelSegment/AdvancedFresnelSegment/AdvFresnelSegment/Content/' was aborted.
+[2023.08.20-14.39.09:830][650]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2023.08.20-14.39.09:830][650]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2023.08.20-14.39.09:831][650]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2023.08.20-14.39.09:831][650]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2023.08.20-14.39.09:831][650]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2023.08.20-14.39.09:831][650]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2023.08.20-14.39.09:831][650]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2023.08.20-14.39.09:831][650]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2023.08.20-14.39.09:831][650]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2023.08.20-14.39.09:831][650]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2023.08.20-14.39.09:875][650]LogDerivedDataCache: Shutdown
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2023.08.20-14.39.09:875][650]LogOnline:Display: Unloading online subsystem: NULL
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2023.08.20-14.39.09:875][650]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2023.08.20-14.39.09:875][650]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2023.08.20-14.39.09:875][650]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD442B0A8-4815-88B6-EF39-7A8B5E682439%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.3-3450819%2B%2B%2BUE4%2BRelease-4.15&UserID=2b6c1de74d0caae449a555a49b0d1b68%7C7fff7a6d1aea425e8b8762a5aa1891f9%7C909e13c8-e5bd-4074-a206-b21fe18e9311&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2023.08.20-14.39.09:885][650]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2023.08.20-14.39.09:886][650]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2023.08.20-14.39.09:886][650]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2023.08.20-14.39.09:886][650]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2023.08.20-14.39.09:886][650]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2023.08.20-14.39.09:886][650]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2023.08.20-14.39.09:887][650]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2023.08.20-14.39.09:887][650]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2023.08.20-14.39.09:887][650]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2023.08.20-14.39.09:887][650]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2023.08.20-14.39.09:887][650]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2023.08.20-14.39.09:887][650]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2023.08.20-14.39.09:887][650]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2023.08.20-14.39.09:887][650]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2023.08.20-14.39.09:887][650]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2023.08.20-14.39.09:887][650]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2023.08.20-14.39.09:889][650]LogExit: Exiting.
+[2023.08.20-14.39.09:892][650]Log file closed, 08/20/23 10:39:09
