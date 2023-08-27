@@ -1,4 +1,4 @@
-# AdvancedFresnelSegment
+# Advanced Fresnel Segment - Unreal
 
 This fresnel effect has the possibility to segment the effect (see video), allow to you only apply the effect in a portion of the mesh, cool effect to create a fake rim or backlight, also it would be very useful in visual effects
 
